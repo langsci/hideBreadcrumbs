@@ -45,7 +45,7 @@ class HideBreadcrumbsPlugin extends GenericPlugin {
 			
 			case 'frontend/components/breadcrumbs.tpl':
 			
-				$templateMgr->display('', 'text/html', 'TemplateManager::include');
+				$templateMgr->display($this->getTemplatePath() .'emptyTemplate.tpl', 'text/html', 'TemplateManager::include');
 				return true; 
 
 		}
